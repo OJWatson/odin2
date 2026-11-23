@@ -17,9 +17,9 @@ generate_js_parts <- function() {
     build_params = generate_js_system_build_params,
     build_internal = generate_js_system_build_internal,
     initial = generate_js_system_initial,
-    update = generate_js_system_update,
-    rhs = generate_js_system_rhs,
-    output = generate_js_system_output
+    update = function(dat) js_hoist_method(generate_js_system_update(dat)),
+    rhs = function(dat) js_hoist_method(generate_js_system_rhs(dat)),
+    output = function(dat) js_hoist_method(generate_js_system_output(dat))
   )
 }
 
