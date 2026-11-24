@@ -1,0 +1,9 @@
+{
+  "name": "odin2-js-hoist-mwe",
+  "private": true,
+  "type": "module",
+  "description": "Benchmark of odin2's generated JavaScript with and without hoisting look-ups out of loops",
+  "dependencies": {
+    "@reside-ic/dust2": "1.2.0"
+  }
+}
